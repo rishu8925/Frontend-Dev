@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model & Positioning Master Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">MyWeb</h1>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to My Website</h2>
+      <p>Designing modern layouts with pure HTML & CSS</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          We are a creative web design team dedicated to crafting visually appealing and fully responsive websites.
+          Our work demonstrates precision in CSS positioning, margin control, and layout structure using the box model.
+        </p>
+        <p>
+          Each design is built to adapt seamlessly across devices while maintaining balance and clarity.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://picsum.photos/500/350?random=2" alt="About Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-box">
+        <h3>Web Design</h3>
+        <p>We create user-friendly, beautiful web designs optimized for performance and usability.</p>
+      </div>
+      <div class="service-box highlight">
+        <h3>Development</h3>
+        <p>We develop robust, scalable, and responsive websites using the latest web technologies.</p>
+      </div>
+      <div class="service-box">
+        <h3>SEO Optimization</h3>
+        <p>Boost your visibility online with our SEO strategies tailored to your target audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 MyWeb. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

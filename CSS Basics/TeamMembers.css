@@ -1,0 +1,80 @@
+/* Reset basic spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 40px;
+}
+
+/* Section Title */
+.team-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Container using Flexbox */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Team Card */
+.team-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Highlighted Card (Team Lead) */
+.highlight {
+  background-color: #eaf6ff;
+  border: 2px solid #007acc;
+}
+
+/* Name & Role Styling */
+.team-card h2 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.team-card .role {
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.team-card p {
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    width: 90%;
+  }
+}

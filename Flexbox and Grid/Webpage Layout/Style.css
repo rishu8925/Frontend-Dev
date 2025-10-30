@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Layout using Grid */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Article */
+article {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animated-title {
+  font-size: 1.8em;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Flexbox inside article */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.box {
+  flex: 1;
+  background-color: #e9ecef;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Sidebar */
+aside {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .box-container {
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}

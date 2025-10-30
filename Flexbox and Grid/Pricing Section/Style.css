@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+/* Pricing Section */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Highlighted Middle Card */
+.premium {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.premium button {
+  background-color: white;
+  color: #007bff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .premium {
+    transform: none;
+  }
+}

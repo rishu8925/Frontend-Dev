@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.principles-container {
+    max-width: 1100px;
+    width: 90%;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.principles-container h1 {
+    color: #2563eb;
+    margin-bottom: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.grid-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Card Styling */
+.card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: #334155;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #475569;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+}
+
+.card pre {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+/* Hover Effect */
+.card:hover {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card:hover pre {
+    background: rgba(255,255,255,0.2);
+    color: #f8fafc;
+}
+
+.card:hover h2 {
+    color: #fef9c3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .grid-principles {
+        grid-template-columns: 1fr;
+    }
+
+    .principles-container {
+        padding: 1.8rem;
+    }
+}

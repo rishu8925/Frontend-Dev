@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #eef2ff, #fef9c3);
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 300px;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover {
+    background: linear-gradient(135deg, #93c5fd, #c084fc);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.card h2 {
+    color: #2563eb;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(45% - 2rem);
+        max-width: 400px;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

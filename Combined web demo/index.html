@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Web Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FlexGrid Demo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-grid">
+            <div class="gallery fade-in">
+                <h2>Responsive Image Gallery</h2>
+                <div class="grid-gallery">
+                    <img src="https://source.unsplash.com/300x200/?nature" alt="Nature" class="filtered">
+                    <img src="https://source.unsplash.com/300x200/?city" alt="City" class="filtered">
+                    <img src="https://source.unsplash.com/300x200/?technology" alt="Tech" class="filtered">
+                    <img src="https://source.unsplash.com/300x200/?ocean" alt="Ocean" class="filtered">
+                    <img src="https://source.unsplash.com/300x200/?forest" alt="Forest" class="filtered">
+                    <img src="https://source.unsplash.com/300x200/?mountain" alt="Mountain" class="filtered">
+                </div>
+            </div>
+
+            <div class="text fade-in">
+                <h2>What Is Responsive Design?</h2>
+                <p>
+                    Responsive design is the approach where web content adapts to various screen sizes and devices.
+                    It ensures usability and aesthetics across desktops, tablets, and mobile phones. Using techniques like
+                    Flexbox, CSS Grid, <code>@media</code> queries, and <code>clamp()</code> for typography,
+                    we can create layouts that resize gracefully.
+                </p>
+                <p>
+                    The goal is to make the web accessible, consistent, and visually engaging — no matter the device.
+                </p>
+            </div>
+
+            <div class="cheat fade-in">
+                <h2>Responsive CSS Cheat Sheet</h2>
+                <ul>
+                    <li><strong>Flexbox:</strong> <code>display: flex;</code></li>
+                    <li><strong>Grid:</strong> <code>display: grid;</code></li>
+                    <li><strong>Media Query:</strong> <code>@media (max-width: 700px)</code></li>
+                    <li><strong>Typography:</strong> <code>font-size: clamp(1rem, 2vw, 1.5rem);</code></li>
+                    <li><strong>Transition:</strong> <code>transition: all 0.3s ease;</code></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: demo@example.com | © 2025 Responsive Web Demo</p>
+    </footer>
+</body>
+</html>

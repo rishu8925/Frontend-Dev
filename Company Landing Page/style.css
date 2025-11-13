@@ -1,0 +1,36 @@
+/* ===== Custom Styling for Landing Page ===== */
+
+/* Hero Section Background with Overlay */
+.hero {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+
+/* Add slight overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure text appears above overlay */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Section spacing adjustments for readability */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
